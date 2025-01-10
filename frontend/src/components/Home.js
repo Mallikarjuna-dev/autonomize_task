@@ -7,7 +7,7 @@ const Home = ({ setUser }) => {
 
     const fetchUser = async () => {
         try {
-            const response = await axios.post('http://localhost:5000/api/user', { username });
+            const response = await axios.post('https://autonomize-task.onrender.com/api/user', { username });
             setUserInfo(response.data);
             setUser(response.data);
         } catch (err) {
